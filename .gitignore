@@ -1,0 +1,31 @@
+# Python environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Python caches
+.pytest_cache/
+.ruff_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Local secrets
+.env
+.env.*
+
+# Large model files
+*.hef
+*.pt
+*.onnx
+
+# OS files
+.DS_Store
+
+# Runtime logs
+*.log
+
+# Editor backup files
+*.save
