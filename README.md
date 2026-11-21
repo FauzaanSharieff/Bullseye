@@ -22,7 +22,7 @@ The system uses a Raspberry Pi 5 with a Hailo-8 AI accelerator to run YOLO-based
            Target Coordinates
                     |
                     v
-          Pan-Tilt Controller
+          Pan-Tilt P-Controller
                     |
                     v
           Serial Communication
@@ -33,8 +33,6 @@ The system uses a Raspberry Pi 5 with a Hailo-8 AI accelerator to run YOLO-based
                     v
            Pan and Tilt Servos
 ```
-
-*The tracking controller and automated servo integration are currently under development.*
 
 ## Hardware
 
@@ -62,47 +60,7 @@ The system uses a Raspberry Pi 5 with a Hailo-8 AI accelerator to run YOLO-based
 
 The project uses a pretrained YOLOv8 model compiled for Hailo-8 (`yolov8s_h8.hef`), allowing inference directly on the AI accelerator without requiring the Ultralytics library at runtime.
 
-## Current Status
 
-**Object detection pipeline operational.**
+## Note
 
-The system currently supports:
-
-- Real-time, Hailo-accelerated object detection
-- Selection of a target from the 80 COCO object classes
-- Bounding-box visualization and target coordinate extraction
-- Raspberry Pi–Arduino serial communication
-
-**Next milestone:** Integrate the detection pipeline with pan-tilt motor control to achieve autonomous object tracking.
-
-## Getting Started
-
-### System dependencies
-
-On Raspberry Pi OS:
-
-```bash
-sudo apt update
-sudo apt install python3-picamera2 python3-opencv python3-numpy python3-serial hailo-all
-```
-
-### Python environment
-
-```bash
-python3 -m venv --system-site-packages .venv
-source .venv/bin/activate
-```
-
-### Run object detection
-
-```bash
-python detection.py
-```
-
-The target object can be configured in `detection.py` using its COCO class ID.
-
-## Project Status
-
-🚧 **Under active development**
-
-The object detection stage is complete. Autonomous tracking and closed-loop pan-tilt control are planned for the next stage.
+Bullseye was developed as a sub-unit of a much larger project. Also, it was just a project that was supposed to help me get familiar with microcomputers and their peripherals. Therefore, a large part of the project was vibecoded because figuring out the P-controller properties or reading Hailo documentation to use its Picamera2 implementation myself was not something I was willing to spend my time on. Nevertheless, I learnt a lot from this project once it all came together..
