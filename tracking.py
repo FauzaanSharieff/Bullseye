@@ -371,11 +371,7 @@ def main():
                             (x0, max(20, y0 - 10)), cv2.FONT_HERSHEY_SIMPLEX,
                             0.6, (0, 255, 0), 2,
                         )
-                    cv2.putText(
-                        frame, f"{status} | Pan {pan} Tilt {tilt}",
-                        (20, 35), cv2.FONT_HERSHEY_SIMPLEX,
-                        0.8, (255, 255, 0), 2,
-                    )
+                    
                     try:
                         cv2.imshow("Bullseye Tracking", frame)
                         key = cv2.waitKey(1) & 0xFF
