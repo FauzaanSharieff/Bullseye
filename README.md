@@ -63,4 +63,4 @@ The project uses a pretrained YOLOv8 model compiled for Hailo-8 (`yolov8s_h8.hef
 
 ## Note
 
-Bullseye was developed as a sub-unit of a much larger project. Also, it was just a project that was supposed to help me get familiar with microcomputers and their peripherals. Therefore, a large part of the project was vibecoded because figuring out the P-controller properties or reading Hailo documentation to use its Picamera2 implementation myself was not something I was willing to spend my time on. Nevertheless, I learnt a lot from this project once it all came together..
+Bullseye was developed as a sub-unit of a much larger project. Also, it was just a project that was supposed to help me get familiar with microcomputers and their peripherals. Therefore, a large part of the project was vibecoded because figuring out the P-controller parameters or reading Hailo documentation to use its Picamera2 implementation myself was not something I was willing to spend my time on. Nevertheless, I learnt a lot from this project once it all came together..
